@@ -27,6 +27,7 @@ const App = () => {
       .then((response) => response.json())
       .then((users) => setRobots(users));
   }, []);
+
   const onSearchChange = (e) => {
     setSearchField(e.target.value);
   };
